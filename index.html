@@ -22,7 +22,7 @@
             <div class="flex gap-9">
                 <div class="flex items-center gap-4 rounded-full bg-[#F4F7FF] p-3">
                     <img class="w-6 h-6" src="assets/checkbox.png" alt="">
-                    <h1 class="text-2xl font-bold">23</h1>
+                    <h1 id="calculation_sum" class="text-2xl font-bold">23</h1>
                 </div>
 
                 <div class="flex items-center">
@@ -45,7 +45,7 @@
                         </div>
                         <div>
                             <h5 class="text-xs">Task Assigned</h5>
-                            <h1 class="font-bold text-lg">05</h1>
+                            <h1 id="calculation" class="font-bold text-lg">6</h1>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,8 @@
                             <p class="text-sm font-medium text-gray-700">21 March 2025</p>
                         </div>
 
-                        <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer">
+                        <button
+                            class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer completed_btn">
                             Completed
                         </button>
                     </div>
@@ -127,7 +128,8 @@
                             <p class="text-sm font-medium text-gray-700">21 March 2025</p>
                         </div>
 
-                        <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer">
+                        <button
+                            class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer completed_btn">
                             Completed
                         </button>
                     </div>
@@ -154,7 +156,8 @@
                             <p class="text-sm font-medium text-gray-700">21 March 2025</p>
                         </div>
 
-                        <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer">
+                        <button
+                            class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer completed_btn">
                             Completed
                         </button>
                     </div>
@@ -181,7 +184,8 @@
                             <p class="text-sm font-medium text-gray-700">21 March 2025</p>
                         </div>
 
-                        <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer">
+                        <button
+                            class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer completed_btn">
                             Completed
                         </button>
                     </div>
@@ -208,7 +212,8 @@
                             <p class="text-sm font-medium text-gray-700">21 March 2025</p>
                         </div>
 
-                        <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer">
+                        <button
+                            class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer completed_btn">
                             Completed
                         </button>
                     </div>
@@ -235,7 +240,8 @@
                             <p class="text-sm font-medium text-gray-700">21 March 2025</p>
                         </div>
 
-                        <button class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer">
+                        <button
+                            class="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg cursor-pointer completed_btn">
                             Completed
                         </button>
                     </div>
@@ -261,6 +267,9 @@
 
         document.getElementById('today-date').textContent = `${month} ${date} ${year}`;
     </script>
+
+    <!-- js file -->
+    <script src="scripts/completedButton.js"></script>
 </body>
 
 </html>
