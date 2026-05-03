@@ -34,5 +34,11 @@ buttons.forEach((btn) => {
         p.classList.add('bg-[#F4F7FF]', 'p-3', 'rounded-lg', 'mb-3', 'text-sm');
         p.innerText = `You have completed the task ${taskTitle} at ${time}`;
         historySection.appendChild(p);
+
+        //  history clear button click
+        document.getElementById('btn_clear_history')
+            .addEventListener('click', function () {
+                historySection.innerHTML = '';
+            })
     });
 });
