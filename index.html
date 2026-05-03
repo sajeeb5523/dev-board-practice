@@ -12,47 +12,47 @@
 </head>
 
 <body class="bg-[#F4F7FF] pb-10">
-    <header class="mx-20 pt-5 pb-3">
+    <header class="mx-4 md:mx-10 lg:mx-20 pt-5 pb-3">
         <nav class="flex justify-between bg-[#FFFFFF] px-4 py-2 rounded-md">
             <div class="flex items-center gap-2">
                 <img class="w-10 h-10" src="assets/logo.png" alt="">
                 <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
             </div>
 
-            <div class="flex gap-9">
+            <div class="flex gap-2 md:gap-9">
                 <div class="flex items-center gap-4 rounded-full bg-[#F4F7FF] p-3">
                     <img class="w-6 h-6" src="assets/checkbox.png" alt="">
-                    <h1 id="calculation_sum" class="text-2xl font-bold">23</h1>
+                    <h1 id="calculation_sum" class="text-xl md:text-2xl font-bold">23</h1>
                 </div>
 
                 <div class="flex items-center">
-                    <img id="theme_change" class="w-13 h-13 rounded-full bg-[#F4F7FF] p-2 cursor-pointer"
+                    <img id="theme_change" class="w-10 h-10 md:w-13 md:h-13 rounded-full bg-[#F4F7FF] p-2 cursor-pointer"
                         src="assets/theme-btn.png" alt="">
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="grid grid-cols-12 mx-20 gap-5 min-h-screen">
+    <section class="grid grid-cols-1 lg:grid-cols-12 mx-4 md:mx-10 lg:mx-20 gap-5 min-h-screen">
 
         <!-- left side -->
-        <div class="col-span-9 bg-white rounded-md p-4">
-            <div class="items-center gap-5 grid grid-cols-8">
+        <div class="lg:col-span-9 bg-white rounded-md p-4">
+            <div class="items-center gap-3 grid grid-cols-1 md:grid-cols-3">
 
-                <div class="col-span-2 bg-[#F4F7FF] p-3 rounded-md">
+                <div class="bg-[#F4F7FF] p-3 rounded-md">
                     <div class="flex items-center gap-3">
                         <div class="bg-white rounded-full">
                             <img class="w-11 h-11 p-3" src="assets/checkbox.png" alt="">
                         </div>
                         <div>
                             <h5 class="text-xs">Task Assigned</h5>
-                            <h1 id="calculation" class="font-bold text-lg">6</h1>
+                            <h1 id="calculation" class="font-bold text-base md:text-lg">6</h1>
                         </div>
                     </div>
                 </div>
 
                 <div id="blog_page"
-                    class="col-span-4 bg-linear-65 from-[#6C7FFA] to-[#9BA8F8] px-6 py-3 rounded-md cursor-pointer">
+                    class="bg-linear-65 from-[#6C7FFA] to-[#9BA8F8] px-4 md:px-6 py-3 rounded-md cursor-pointer">
                     <div class="flex gap-3">
                         <img class="w-11 h-11" src="assets/board.png" alt="">
                         <div class="text-white">
@@ -62,14 +62,14 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 items-center bg-[#F4F7FF] p-3 rounded-md">
+                <div class="items-center bg-[#F4F7FF] p-3 rounded-md">
                     <div class="flex gap-3">
                         <div class="bg-white rounded-full">
                             <img class="w-11 h-11 p-3" src="assets/calender.png" alt="">
                         </div>
                         <div>
-                            <h1 id="today-day" class="text-lg"></h1>
-                            <h1 id="today-date" class="font-bold text-lg"></h1>
+                            <h1 id="today-day" class="text-sm md:text-lg"></h1>
+                            <h1 id="today-date" class="font-bold text-sm md:text-lg"></h1>
                         </div>
                     </div>
                 </div>
@@ -79,13 +79,13 @@
                 <hr class="mt-4 border-t-2 border-dashed border-gray-200">
             </div>
 
-            <section class="mt-5 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5">
+            <section class="mt-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
 
                 <!-- Card 1 -->
-                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-5 space-y-4 h-[310px] w-72">
+                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-4 md:p-5 space-y-4 h-auto md:h-[310px] w-full">
                     <span class="text-sm bg-white px-4 py-2 rounded-md inline-block">ShopEase</span>
 
-                    <h2 class="text-[22px] font-semibold text-gray-800 title_history">Fix Mobile Button Issue</h2>
+                    <h2 class="text-lg md:text-[22px] font-semibold text-gray-800 title_history">Fix Mobile Button Issue</h2>
 
                     <p class="text-sm text-gray-500 bg-white p-3 rounded-md text-justify">
                         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -110,10 +110,10 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-5 space-y-4 h-[310px] w-72">
+                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-4 md:p-5 space-y-4 h-auto md:h-[310px] w-full">
                     <span class="text-sm bg-white px-4 py-2 rounded-md inline-block">CloudSync</span>
 
-                    <h2 class="text-[22px] font-semibold text-gray-800 title_history">Add Dark Mode</h2>
+                    <h2 class="text-lg md:text-[22px] font-semibold text-gray-800 title_history">Add Dark Mode</h2>
 
                     <p class="text-sm text-gray-500 bg-white p-3 rounded-md text-justify">
                         Store the user's preference in localStorage, update CSS variables dynamically, and apply a
@@ -138,10 +138,10 @@
                 </div>
 
                 <!-- card 3 -->
-                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-5 space-y-4 h-[310px] w-72">
+                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-4 md:p-5 space-y-4 h-auto md:h-[310px] w-full">
                     <span class="text-sm bg-white px-4 py-2 rounded-md inline-block">SwiftPay</span>
 
-                    <h2 class="text-[22px] font-semibold text-gray-800 title_history">Optimize Home page</h2>
+                    <h2 class="text-lg md:text-[22px] font-semibold text-gray-800 title_history">Optimize Home page</h2>
 
                     <p class="text-sm text-gray-500 bg-white p-3 rounded-md text-justify">
                         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -166,10 +166,10 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-5 space-y-4 h-[310px] w-72">
+                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-4 md:p-5 space-y-4 h-auto md:h-[310px] w-full">
                     <span class="text-sm bg-white px-4 py-2 rounded-md inline-block">Meta</span>
 
-                    <h2 class="text-[22px] font-semibold text-gray-800 title_history">Add new emoji 🤲</h2>
+                    <h2 class="text-lg md:text-[22px] font-semibold text-gray-800 title_history">Add new emoji 🤲</h2>
 
                     <p class="text-sm text-gray-500 bg-white p-3 rounded-md text-justify">
                         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -194,10 +194,10 @@
                 </div>
 
                 <!-- card 5 -->
-                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-5 space-y-4 h-[310px] w-72">
+                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-4 md:p-5 space-y-4 h-auto md:h-[310px] w-full">
                     <span class="text-sm bg-white px-4 py-2 rounded-md inline-block">Google LLC</span>
 
-                    <h2 class="text-[22px] font-semibold text-gray-800 title_history">Integrate OpenAI API</h2>
+                    <h2 class="text-lg md:text-[22px] font-semibold text-gray-800 title_history">Integrate OpenAI API</h2>
 
                     <p class="text-sm text-gray-500 bg-white p-3 rounded-md text-justify">
                         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -222,10 +222,10 @@
                 </div>
 
                 <!-- card 6 -->
-                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-5 space-y-4 h-[310px] w-72">
+                <div class="bg-[#F4F7FF] rounded-xl shadow-sm p-4 md:p-5 space-y-4 h-auto md:h-[310px] w-full">
                     <span class="text-sm bg-white px-4 py-2 rounded-md inline-block">Glassdoar</span>
 
-                    <h2 class="text-[22px] font-semibold text-gray-800 title_history">Improve Job searching </h2>
+                    <h2 class="text-lg md:text-[22px] font-semibold text-gray-800 title_history">Improve Job searching </h2>
 
                     <p class="text-sm text-gray-500 bg-white p-3 rounded-md text-justify">
                         Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -252,14 +252,14 @@
         </div>
 
         <!-- right side -->
-        <div class="col-span-3 bg-white rounded-md">
+                        <div class="lg:col-span-3 bg-white rounded-md">
             <div class="flex gap-3 justify-center items-center p-4">
                 <img class="h-5 w-5" src="assets/activity.png" alt="">
-                <h2 class="text-xl">Activity Log</h2>
+                <h2 class="text-lg md:text-xl">Activity Log</h2>
             </div>
 
             <div class="flex justify-center items-center">
-                <button id="btn_clear_history" class="btn btn-primary w-32">Clear History</button>
+                <button id="btn_clear_history" class="btn btn-primary w-28 md:w-32 btn-sm md:btn-md">Clear History</button>
             </div>
 
             <div>
